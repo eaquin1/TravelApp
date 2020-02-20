@@ -34,7 +34,14 @@
         <canvas id="icon1" width="128" height="128"></canvas>
       </section>
     </div>
-    <div id="photo"></div>
+    <div class="results">
+      <div id="photo"></div>
+      <div class="saved-trips">
+        <button id="addButton" onClick="client.addTrip()" type="button">Add Trip</button>
+        <ul></ul>
+        <button id="removeButton" onClick="client.removeTrip()" type="button">Remove Trip</button>
+      </div>  
+    </div>
   </main>
   <footer>
     <div class="footer">

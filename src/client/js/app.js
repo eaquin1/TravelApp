@@ -10,7 +10,6 @@ const getLocation = async (location='Paris') => {
 const handleLocation = async() => {
   const location = document.getElementById('location').value;
   return await getLocation(location).then(response => {
-    console.log(response);
     inputData["latitude"] = response.lat;
     inputData["longitude"] = response.lng;
     inputData["city"] = response.name;
@@ -40,8 +39,6 @@ const getWeather = async (lat, long, time) => {
 const handleWeather = time => {
   const lat = inputData["latitude"];
   const lng = inputData["longitude"];
-  console.log("lat", lat);
-  console.log("lng", lng);
   var skyconsIcon = new Skycons({"color": "pink"});
   //Divided by 1000 because JavaScript uses milliseconds as the unit of measurement, whereas Unix Time is in seconds
   let travelTime = new Date(document.getElementById('departureDate').value).getTime()/1000;

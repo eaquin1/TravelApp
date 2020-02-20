@@ -26,16 +26,20 @@ body{
     border: 1px solid rgba(34,36,38,.15);
     width: 350px;
   }
-  
-  & #submitButton {
-    background-color: $accent-gray;
-    font-family: inherit;
-    width: 30%;
-    border-radius: 5px;
-    margin: 10px 150px 10px 20px;
-    text-align: center;
-  }  
+
 }
+
+#submitButton {
+  width: 30%;
+}
+button {
+  background-color: $accent-gray;
+  font-family: inherit;
+  width: 18%;
+  border-radius: 5px;
+  margin: 10px 150px 10px 20px;
+  text-align: center;
+}  
 
 input {
   width: 100%;
@@ -54,12 +58,25 @@ input {
 
 #photo {
   display: grid;
-  justify-content: center;
   & img {
       border-radius: 17px;
   }
 }  
-  
+
+.results {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  & .saved-trips {
+    margin: 15px;
+  }
+}
+
+ul {
+  list-style-type: none;
+  padding: 11px 21px;
+  line-height: 3em;
+}
+
 @media screen and (max-width: 400px) {
   .container {
     display: block;
