@@ -35,7 +35,6 @@ body{
 button {
   background-color: $accent-gray;
   font-family: inherit;
-  width: 18%;
   border-radius: 5px;
   margin: 10px 150px 10px 20px;
   text-align: center;
@@ -77,11 +76,24 @@ ul {
   line-height: 3em;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 415px) {
   .container {
     display: block;
   }
+  
+  .results {
+    display: block;
+  }
+  
   #input, #results {
     text-align: center;
+  }
+  
+  img {
+    width: 80%;
+    margin-left: 30px;
+  }
+  button {
+    width: 30%;
   }
 }

@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
+  <head profile="http://www.w3.org/2005/10/profile">
+    <link rel="icon" 
+      type="image/png" 
+      href="https://img.icons8.com/cotton/64/000000/owl--v1.png" />
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>Travel Owl</title>
@@ -41,7 +44,8 @@
         <ul></ul>
         <button id="removeButton" onClick="client.removeTrip()" type="button">Remove Trip</button>
       </div>  
-    </div>
+      </div>
+    
   </main>
   <footer>
     <div class="footer">
@@ -49,6 +53,16 @@
       <a href="https://icons8.com/icon/54035/owl">Owl icon by Icons8</a>
     </div>
   </footer>
-    <script src="https://darkskyapp.github.io/skycons/skycons.js"></script>
+  <script>
+  // Check that service workers are supported
+  if ('serviceWorker' in navigator) {
+      // Use the window load event to keep the page load performant
+      window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/service-worker.js');
+      });
+  }
+</script>
+<script src="https://darkskyapp.github.io/skycons/skycons.js"></script>
+  
   </body>
 </html>

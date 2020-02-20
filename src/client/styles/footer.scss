@@ -5,5 +5,10 @@ footer {
   & a {
     text-decoration: none;
     margin: 10px;
+    color: pink;
+  }
+  
+  & a:hover {
+    color: $accent-yellow;
   }
 }

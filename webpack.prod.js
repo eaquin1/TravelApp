@@ -3,7 +3,8 @@ webpack = require('webpack'),
 HtmlWebPackPlugin = require('html-webpack-plugin'),
 MiniCssExtractPlugin = require('mini-css-extract-plugin'),
 OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin'),
-TerserPlugin = require('terser-webpack-plugin');
+TerserPlugin = require('terser-webpack-plugin'),
+WorkboxPlugin = require('workbox-webpack-plugin');
 
 module.exports = {
   mode: 'production',
@@ -37,6 +38,7 @@ module.exports = {
     new webpack.IgnorePlugin({
       resourceRegExp: /^\.\/locale$/,
       contextRegExp: /moment$/
-    })
+    }),
+    new WorkboxPlugin.GenerateSW()
   ]
 }
