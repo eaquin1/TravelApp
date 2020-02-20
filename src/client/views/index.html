@@ -1,55 +1,47 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Travel Owl</title>
-        <link href="https://fonts.googleapis.com/css?family=Amatic+SC:700|Source+Sans+Pro&display=swap" rel="stylesheet">
-    </head>
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Travel Owl</title>
+  </head>
 
-    <body>
-
-        <header>
-            <div class="header">
-                <h1>Plan Your Trip With Travel Owl</h1>
-                <div id="owl">
-                <img src="https://img.icons8.com/cotton/100/000000/owl--v1.png">
-                </div>
-            </div>
-        </header>
-
-        <main>
-          <div class="container">
-            <section id="input">
-                <form class="form">
-                  <label for="location">Destination</label>
-                <input id="location" type="text" name="location" placeholder="City">
-                <label for="departureDate">Departure Date</label>
-                    <input id="departureDate" type="date" name="departureDate" placeholder="yyyy-mm-dd">
-                <label for="homeDate">Return Date</label>
-                    <input id="homeDate" type="date" name="homeDate" placeholder="yyyy-mm-dd">
-                    <button id="submitButton" onClick="client.formHandler()" type="button">Submit</button>
-                </form>
-            </section>
-
-            <section id="results">
-                <div id="arrival"></div>
-                <div id="weather"></div>
-                <canvas id="icon1" width="128" height="128"></canvas>
-            </section>
+  <body>
+    <header>
+      <div class="header">
+          <h1>Plan Your Trip With Travel Owl</h1>
+          <div id="owl">
+          <img src="https://img.icons8.com/cotton/100/000000/owl--v1.png">
           </div>
-            
-            <div id="photo"></div>
-                
-            
-        </main>
-
-        <footer>
-          <div class="footer">
-            <a href = "https://sharpdesigns.xyz" title="Emily Aquin" target="_blank">Emily Aquin</a>
-            <a href="https://icons8.com/icon/54035/owl">Owl icon by Icons8</a>
-          </div>
-        </footer>
-        <script src="https://darkskyapp.github.io/skycons/skycons.js"></script>
+      </div>
+    </header>
+  <main>
+    <div class="container">
+      <section id="input">
+        <form class="form">
+          <label for="location">Destination</label>
+          <input id="location" type="text" name="location" placeholder="City">
+          <label for="departureDate">Departure Date</label>
+          <input id="departureDate" type="date" name="departureDate" placeholder="yyyy-mm-dd">
+          <label for="homeDate">Return Date</label>
+          <input id="homeDate" type="date" name="homeDate" placeholder="yyyy-mm-dd">
+          <button id="submitButton" onClick="client.formHandler()" type="button">Submit</button>
+        </form>
+      </section>
+      <section id="results">
+        <div id="arrival"></div>
+        <div id="weather"></div>
+        <canvas id="icon1" width="128" height="128"></canvas>
+      </section>
+    </div>
+    <div id="photo"></div>
+  </main>
+  <footer>
+    <div class="footer">
+      <a href = "https://sharpdesigns.xyz" title="Emily Aquin" target="_blank">Emily Aquin</a>
+      <a href="https://icons8.com/icon/54035/owl">Owl icon by Icons8</a>
+    </div>
+  </footer>
+    <script src="https://darkskyapp.github.io/skycons/skycons.js"></script>
   </body>
 </html>

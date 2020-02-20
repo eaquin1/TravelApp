@@ -20,9 +20,9 @@ const geoDataKey = process.env.GEO_USER;
 const darkSkyKey = process.env.DARK_SKY_KEY;
 const pixaBayKey = process.env.PIXABAY_KEY;
 
-// app.get('/', function (req, res) {
-//     res.sendFile(path.join(__dirname, '../..dist', 'index.html'));
-// });
+app.get('/', function (req, res) {
+    res.sendFile(path.join(__dirname, '../..dist', 'index.html'));
+});
 
 const getLocation = async(location, geoKey) => {
 const geonamesUrl = `http://api.geonames.org/searchJSON?q=${location}&username=${geoDataKey}`;
@@ -51,7 +51,6 @@ app.get('/darkSky', (req, res) => {
   const lat = req.query.latitude;
   const long = req.query.longitude;
   const time = req.query.time;
-  console.log(req.query);
   getWeather(darkSkyKey, lat, long, time).then(response => {
     res.end(JSON.stringify(response));
   })

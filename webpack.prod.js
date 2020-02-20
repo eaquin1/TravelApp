@@ -8,6 +8,10 @@ TerserPlugin = require('terser-webpack-plugin');
 module.exports = {
   mode: 'production',
   entry: './src/client/index.js', 
+  output: {
+    libraryTarget: 'var',
+    library: 'client'
+ },
   module: {
     rules: [
       {
@@ -28,6 +32,11 @@ module.exports = {
     new HtmlWebPackPlugin({
       template: "./src/client/views/index.html",
       filename: "./index.html"
+    }), 
+    new MiniCssExtractPlugin({filename: '[name].css'}),
+    new webpack.IgnorePlugin({
+      resourceRegExp: /^\.\/locale$/,
+      contextRegExp: /moment$/
     })
   ]
 }

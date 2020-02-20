@@ -63,17 +63,5 @@ const getPhoto = async (image="flower") => {
   })
 };
 
-const formHandler = event => {
-  const currentCity = document.getElementById('location').value;
-  countdown();
-  handleLocation()
-    .then(response => {
-    handleWeather(response);
-  });
-  
-  getPhoto(currentCity)
-  .then(response => {
-    document.getElementById('photo').innerHTML = `<img src="${response}" alt="${currentCity}">`
-  });
-}
-export { formHandler, getLocation };
+
+export { getLocation, handleLocation, countdown, getWeather, handleWeather, getPhoto };
