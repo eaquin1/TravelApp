@@ -46,8 +46,8 @@ const handleWeather = time => {
   const icon = response["icon"];
   document.getElementById('weather').innerHTML = `<h2>Weather Forecast</h2>
   <p>Typical weather for then is:</p>
-   <p>Low: ${response["temperatureLow"].toFixed(0)} degrees Farenheit</p> 
-   <p>High: ${response["temperatureHigh"].toFixed(0)} degrees Farenheit</p>
+   <p>Low: ${response["temperatureLow"].toFixed(0)} degrees Fahrenheit</p> 
+   <p>High: ${response["temperatureHigh"].toFixed(0)} degrees Fahrenheit</p>
    <p>${response["summary"]}</p>`;
    skyconsIcon.set(document.getElementById("icon1"), icon);
    skyconsIcon.play();
