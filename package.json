@@ -23,7 +23,7 @@
     "skycons": "^1.0.0",
     "terser-webpack-plugin": "^2.3.4",
     "webpack": "^4.41.5",
-    "webpack-cli": "^3.3.10"
+    "webpack-cli": "^3.3.12"
   },
   "devDependencies": {
     "@babel/core": "^7.8.4",
@@ -31,7 +31,7 @@
     "babel-loader": "^8.0.6",
     "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^3.4.2",
-    "html-webpack-plugin": "^3.2.0",
+    "html-webpack-plugin": "^5.5.0",
     "jest": "^25.1.0",
     "jest-fetch-mock": "^3.0.1",
     "node-sass": "^4.13.1",
